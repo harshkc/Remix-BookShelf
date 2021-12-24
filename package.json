@@ -1,0 +1,29 @@
+{
+  "private": true,
+  "name": "xbook",
+  "description": "",
+  "license": "",
+  "scripts": {
+    "tailwindDev": "tailwindcss -i ./app/styles/input.css -o ./app/styles/tailwind.css --watch",
+    "tailwindProd": "NODE_ENV=production tailwindcss -i ./app/styles/input.css -o ./app/styles/tailwind.css --minify",
+    "build": "remix build",
+    "dev": "remix dev",
+    "postinstall": "remix setup node",
+    "start": "remix-serve build"
+  },
+  "dependencies": {
+    "@remix-run/react": "^1.1.1",
+    "@remix-run/serve": "^1.1.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "remix": "^1.1.1",
+    "tailwindcss": "^3.0.7"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^1.1.1"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "sideEffects": false
+}
